@@ -1,0 +1,431 @@
+:root {
+  --brown: rgba(99, 65, 40, 255);
+  --brish: rgba(168, 146, 126, 255);
+  --briish: #84683c;
+  --beige: rgba(236, 227, 214, 255);
+}
+html {
+  font-family: "Acorn", sans-serif;
+  background-color: black;
+  scroll-behavior: smooth;
+}
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  display: block;
+  justify-content: center;
+  height: fit-content;
+  overflow-x: hidden;
+  background: linear-gradient(
+    to bottom,
+    var(--beige),
+    var(--beige),
+    var(--brish),
+    var(--brish)
+  );
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+nav a {
+  list-style: none;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  border-radius: 50vw;
+  transition: ease-in-out 0.3s;
+  position: relative;
+  font-weight: 500;
+  color: var(--brown);
+}
+nav a:hover {
+  scale: 1.2;
+  transition: ease-in-out 0.3s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+nav {
+  padding: 10px;
+  padding-right: 40px;
+  padding-left: 40px;
+  width: fit-content;
+  /* background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
+  border-radius: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.About1 {
+  height: 100vh;
+}
+.abo {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 100vh;
+  gap: 30px;
+}
+.abo h1 {
+  padding-top: 16vh;
+  line-height: 18vh;
+  font-size: 150px;
+  color: var(--brown);
+  margin: 0;
+}
+.abo h3 {
+  text-align: center;
+  letter-spacing: 2px;
+  color: var(--brish);
+}
+.abo span {
+  color: var(--brish);
+}
+.abo1 {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.image1 {
+  border-radius: 15vh;
+  border: solid var(--brown) 6px;
+  box-shadow: black 0px 0px 5px;
+  background-image: url("assets/Pfp.png");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+  transition: ease-in-out 0.5s;
+}
+
+.abo11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.abo11 h1 {
+  line-height: 18vh;
+  font-size: 80px;
+  margin: 5vh;
+  color: var(--brown);
+}
+.abo11 h4 {
+  font-size: 20px;
+  font-weight: 300;
+  color: rgb(129, 83, 39);
+  margin: 0;
+}
+.text {
+  width: 500px;
+  height: auto;
+  text-align: justify;
+}
+.text1 {
+  opacity: 0;
+  scale: 0.95;
+}
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.fade.fade-in {
+  opacity: 1;
+  transition: 0.5s ease-in-out;
+}
+.slide {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+.slide-in {
+  transform: translateX(0);
+  opacity: 1;
+  transition: ease-in-out 0.4s;
+}
+
+.CV {
+  background-color: var(--brown);
+  color: var(--beige);
+  text-decoration: none;
+  text-align: center;
+  border-radius: 1vh;
+  font-size: 20px;
+  margin: 10px;
+  margin-top: 40px;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: none;
+  transition: ease-in-out 0.3s;
+}
+.CV:hover {
+  background-color: var(--beige);
+  color: var(--brown);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  scale: 1.2;
+  border: none;
+}
+
+.ski {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("assets/abstract_pattern_design_background_2007.jpg");
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: multiply;
+}
+.ski h1 {
+  line-height: 18vh;
+  font-size: 80px;
+  margin: 5vh;
+  color: var(--brown);
+  margin: 2vh;
+}
+.ski h3 {
+  line-height: 8vh;
+  font-size: 24px;
+  margin: 0;
+  color: black;
+  text-align: center;
+  letter-spacing: 1vh;
+}
+.Projects,
+.Certificates {
+  display: flex;
+  flex-direction: column;
+}
+.Projects h1,
+.Certificates h1 {
+  line-height: 18vh;
+  font-size: 80px;
+  margin: 5vh;
+  color: var(--brown);
+  margin: 2vh;
+}
+.pro,
+.cer {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pro {
+  margin: 40px;
+}
+#image-track1 > a > .image {
+  width: 36vmin;
+  height: 30vh;
+  border-radius: 10vh;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transition: object-position 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+#image-track1 > a > .image:hover {
+  cursor: pointer;
+  border-radius: 0.5vh;
+  transition: 0.5s ease-in-out;
+}
+
+#image-track1 h1 {
+  font-size: 20px;
+  color: var(--beige);
+}
+#image-track1 {
+  display: flex;
+  gap: 4vmin;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(20%, -100%);
+  transition: transform 0.1s ease-in-out;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.arrow {
+  position: fixed;
+  bottom: 2%;
+  left: 0;
+  width: 8vw;
+  height: 8vh;
+  animation: fadein 0.5s linear;
+  animation-timeline: scroll(y);
+  fill: var(--brown);
+  transition: 0.3s ease-in-out;
+}
+.arrow:hover {
+  cursor: pointer;
+  fill: var(--beige);
+  transition: 0.3s ease-in-out;
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+    scale: 0;
+  }
+
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+.fade-in {
+  opacity: 1;
+}
+.i1,
+.i2,
+.i3,
+.i4,
+.i5 {
+  background-position: center;
+  background-size: cover;
+  margin: 2vw;
+  width: 20vw;
+  height: 30vh;
+}
+.i1 {
+  background-image: url("assets/certificates/2451-22-737-070.jpg");
+}
+.i2 {
+  background-image: url("assets/certificates/Cloud\ Security\ Fundamentals\ _\ Beacon.jpg");
+}
+.i3 {
+  background-image: url("assets/certificates/Cybersecurity\ Fundamentals\ _\ Beacon.jpg");
+}
+.i4 {
+  background-image: url("assets/certificates/Network\ Security\ Fundamentals\ _\ Beacon.jpg");
+}
+.i5 {
+  background-image: url("assets/certificates/Security\ Operations\ Fundamentals\ _\ Beacon.jpg");
+}
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  margin: 20px;
+  margin-bottom: 0;
+  border-top: solid var(--brown) 2px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.inst {
+  padding: 0;
+  margin: 10px;
+  width: 3vw;
+  height: 3vh;
+}
+.link,
+.twit {
+  padding: 0;
+  margin: 0;
+  width: 4.5vw;
+  height: 4.5vh;
+}
+footer > a {
+  display: flex;
+}
+
+footer > a > h3 {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  color: black;
+}
+footer a h3:hover {
+  color: var(--beige);
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.dropdown-content {
+  display: none;
+}
+.open {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  padding: 10px 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  width: 30%;
+  height: 50%;
+  text-align: left;
+}
+form {
+  margin: 5%;
+}
+input {
+  position: relative;
+  font-size: 100%;
+  font-family: "Acorn", sans-serif;
+}
+.dropdown-content input {
+  border: solid var(--brown) 2px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 2%;
+}
+
+#button {
+  align-self: center;
+  width: fit-content;
+  margin-top: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  transition: 0.3s ease-in-out;
+}
+#button:hover {
+  cursor: pointer;
+  scale: 1.1;
+  transition: 0.3s ease-in-out;
+  color: var(--beige);
+  background-color: var(--brown);
+}
+
+.what {
+  font-size: 150%;
+  font-weight: 600;
+  color: black;
+  align-self: center;
+  transition: 0.3s ease-in-out;
+}
+.what:hover {
+  scale: 1.2;
+  color: var(--brown);
+  transition: 0.3s ease-in-out;
+}
+form {
+  font-size: 150%;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+}
