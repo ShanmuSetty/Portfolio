@@ -10,7 +10,9 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 @media only screen and (min-width: 1000px) {
   body {
     scroll-behavior: smooth;
@@ -360,6 +362,26 @@ html {
     color: var(--beige);
     cursor: pointer;
     transition: 0.2s ease-in-out;
+  }
+  #alertBoxContainer {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 999;
+  }
+
+  #alertBox {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
   .dropdown-content {
     display: none;
@@ -917,6 +939,7 @@ html {
   .abo h3 {
     text-align: center;
     letter-spacing: 0.7px;
+    font-size: 16px;
     color: var(--brish);
   }
   .abo span {
@@ -925,6 +948,7 @@ html {
   .abo1 {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 35px;
   }
   .image1 {
@@ -959,11 +983,10 @@ html {
   .text {
     width: 175px;
     height: auto;
-    text-align: justify;
   }
   .text1 {
     opacity: 0;
-    transform: scale(0.35);
+    transform: scale(1);
   }
   .fade {
     opacity: 0;
@@ -1056,8 +1079,8 @@ html {
     margin: 10.5px;
   }
   #image-track1 > a > .image {
-    width: 10.5vmin;
-    height: 8.75vh;
+    width: 100px;
+    height: 70px;
     border-radius: 3.5vh;
     object-fit: cover;
     object-position: 50% 50%;
@@ -1070,8 +1093,7 @@ html {
     transition: 0.175s ease-in-out;
   }
   #image-track1 h1 {
-    font-size: 5.25px;
-    color: var(--beige);
+    display: none;
   }
   #image-track1 {
     display: flex;
@@ -1120,8 +1142,8 @@ html {
     background-position: center;
     background-size: cover;
     margin: 0.245vw;
-    width: 3.5vw;
-    height: 5.25vh;
+    width: 100px;
+    height: 70px;
   }
   .i1 {
     background-image: url("assets/certificates/2451-22-737-070.jpg");
@@ -1140,6 +1162,7 @@ html {
   }
   .images {
     display: flex;
+    gap: 20px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;

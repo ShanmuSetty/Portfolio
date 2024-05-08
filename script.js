@@ -14,7 +14,7 @@ window.onmousemove = (e) => {
   const percentage = (mouseDelta / maxDelta) * -100;
   let nextPercentage = parseFloat(track1.dataset.prevPercentage) + percentage;
   nextPercentage = Math.min(nextPercentage, 0);
-  nextPercentage = Math.max(nextPercentage, -100);
+  nextPercentage = Math.max(nextPercentage, -90);
   track1.dataset.percentage = nextPercentage;
   track1.animate(
     {
@@ -80,3 +80,13 @@ window.onclick = function (event) {
     drp.classList.remove("open");
   }
 };
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    document.getElementById("alertBoxContainer").style.display = "block";
+  }, 5000);
+});
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    document.getElementById("alertBoxContainer").style.display = "none";
+  }, 9000);
+});
