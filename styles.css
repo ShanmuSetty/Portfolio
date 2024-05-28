@@ -216,7 +216,7 @@ nav {
 .Projects h1,
 .Certificates h1 {
   font-size: 6vw;
-  margin: 4vw 0 2vw 0;
+  margin: 4vw 0 0 0;
   color: var(--brown);
 }
 .pro,
@@ -312,6 +312,7 @@ nav {
   background-image: url("assets/certificates/Security\ Operations\ Fundamentals\ _\ Beacon.jpg");
 }
 .images {
+  width: 90vw;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
